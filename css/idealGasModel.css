@@ -1,0 +1,63 @@
+body.pushable {
+    background-color: #f7f7f7 !important;
+}
+
+.launch.button {
+    position: fixed;
+    top: 70px;
+    width: 55px;
+    height: auto;
+    z-index: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-transition: 0.3s width ease, 0.5s transform ease;
+    -o-transition: 0.3s width ease, 0.5s transform ease;
+    transition: 0.3s width ease, 0.5s transform ease;
+}
+
+.launch.button > .text {
+    display: none;
+}
+
+.ui.main.header {
+    margin-top: 1rem;
+}
+
+.ui.model.segment {
+    padding: 0;
+}
+
+.svg {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.circle {
+    fill: red;
+    stroke: black;
+}
+
+.lead {
+    font-size: 1.2rem !important;
+}
+
+footer {
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 1.1rem;
+}
+
+footer a {
+    color: #fff;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #333;
+}
+
+footer > .ui.footer.segment {
+    padding: 3rem;
+}

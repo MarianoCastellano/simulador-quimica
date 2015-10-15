@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/idealGasModel.css">
+
+    <title>Simulador del Modelo de gases ideales</title>
+</head>
+
+<body>
+<div class="pusher">
+    <div class="ui page equal width grid">
+        <div class="row">
+            <div class="eigth wide column">
+                <div class="ui basic container segment">
+                    <h3 class="ui dividing header">Simulador</h3>
+
+                    <div class="ui basic model "></div>
+                </div>
+            </div>
+            <div class="eigth wide column">
+                <div class="ui basic segment variables">
+                    <form class="ui large form">
+                        <h3 class="ui dividing header">Variables</h3>
+
+                        <div class="field">
+                            <label>Presion (Atm)</label>
+
+                            <div class="ui right labeled input">
+                                <input id="pressure" type="text" placeholder="Ingrese la presion (atm)" value="1"
+                                        >
+
+                                <div class="ui label">
+                                    <p>Atm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Volumen (l)</label>
+
+                            <div class="ui right labeled input">
+                                <input id="volume" type="text" placeholder="Ingrese el volumen (l)" value="1000">
+
+                                <div class="ui label">
+                                    <p>l</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>N° de moles (mol)</label>
+
+                            <div class="ui right labeled input">
+                                <input id="numberOfMoles" type="text" placeholder="Numero de moles" value="40">
+
+                                <div class="ui label">
+                                    <p>mol</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Constante universal de los gases ideales</label>
+
+                            <div class="ui right labeled input">
+                                <input id="constant" type="text" value="0.082" readonly="readonly">
+
+                                <div class="ui label">
+                                    <p>(l &times; atm) &divide; (mol &times; K)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Temperatura (K)</label>
+
+                            <div class="ui right labeled input">
+                                <input id="temperature" type="text" placeholder="Ingrese la temperatura (K)"
+                                       value="303.15">
+
+                                <div class="ui label">
+                                    <p>K</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <h3 class="ui dividing header">Formula</h3>
+
+                    <div class="ui center aligned piled segment">
+                        <code><i><span data-content="Presion">P</span> &times; V = n &times; R &times; T</i></code>
+                        <br><br>
+                        <code>P - Presion</code>
+                        <br>
+                        <code>V - Volumen</code>
+                        <br>
+                        <code>n - N° moles</code>
+                        <br>
+                        <code>R - Constante universal de los gases ideales</code>
+                        <br>
+                        <code>T - Temperatura</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/semantic.min.js"></script>
+<script type="text/javascript" src="js/d3.min.js"></script>
+<script type="text/javascript" src="js/collisionCheck.js"></script>
+<script type="text/javascript" src="js/idealGasModel.js"></script>
+</body>
+</html>
